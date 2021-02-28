@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name_product": "Nintendo Switch",
+      "description_product": "La console hybride (portable et fixe) de Nintendo",
+      "price_product": 250.25,
+      "image_product": "https://images-na.ssl-images-amazon.com/images/I/71r5EDssKdL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 2,
+      "name_product": "Pc Engine Turbo GraphX",
+      "description_product": "La Pc-Engine connue sous le nom TurboGrafx-16 en Amérique du Nord, est une console de jeux vidéo 8 bits fabriquée par NEC ",
+      "price_product": "452.25",
+      "image_product": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/PC_Engine.jpg/250px-PC_Engine.jpg",
+      "published": true
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name_user": "michael",
+      "email_user": "mic@moi.fr",
+      "password_user": "azerty"
+    }
+  ],
+  "test": {
+    "id": "test"
+  }
+}
