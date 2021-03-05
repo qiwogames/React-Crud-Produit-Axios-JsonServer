@@ -21,7 +21,7 @@ const AddProduct = () =>{
 
     //On appel cette constante dans le formulaire quand l'etat change
     const handleInputChange = event => {
-        //On recup attribut name et sa valeur des input et ils sont la cible
+        //On recup attribut name et sa valeur des inputs et ils sont la cible
         const {name, value} = event.target
         setProducts({
             //On decompile le tableau et recup le tableu de valeur
@@ -29,8 +29,13 @@ const AddProduct = () =>{
         });
     };
 
+
+
     //Sauvegarde des valeur entrée dans le formulaire
     const saveProducts = () => {
+        //Verif des champs du formulaire
+        let errors = {};
+        let formIsValid = true;
         //Creation d'un tableau de valeurs et assignation au tableu de valeur cible
         let data = {
             name_product: products.name_product,
@@ -38,12 +43,31 @@ const AddProduct = () =>{
             price_product: products.price_product,
             image_product: products.image_product
         }
+        //On verifie que le champ n'est pas vide
+        if(data.name_product === ""){
+            alert("Merci de remplir le champs nom du produit !");
+            formIsValid = false;
+            return null;
+        }else if(data.description_product === ""){
+            alert("Merci de remplir le champ description du produit");
+            formIsValid = false;
+            return null;
+        }else if(data.price_product === ""){
+            alert("Merci de remplir le champ prix du produits");
+            formIsValid = false;
+            return null;
+        }else if(data.image_product === ""){
+            alert("Merci de remplti le champs image du produit");
+            formIsValid = false;
+            return null;
+        }
         //Appel de la methode du service et passage du tableau ci-dessus en paramètres
         ApiServices.createProduct(data)
             .then(response => {
-                //Ajout des valeur
+                //Ajout des valeurs
                 setProducts({
                     id_product: response.data.id_product,
+                    name_product: response.data.name_product,
                     description_product: response.data.description_product,
                     price_product: response.data.price_product,
                     image_product: response.data.image_product,
@@ -93,7 +117,8 @@ const AddProduct = () =>{
 
                     <div className="form-group">
                         <label htmlFor="description">Description</label>
-                        <input
+                        <textarea
+                            rows="5"
                             type="text"
                             className="form-control"
                             id="description"

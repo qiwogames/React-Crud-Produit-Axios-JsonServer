@@ -169,7 +169,7 @@ const ProductsList = () => {
                             <label>
                                 <strong>Status:</strong>
                             </label>{" "}
-                            {currentproduct.published ? "Published" : "Pending"}
+                            {currentproduct.published ? "Publié" : "En attente"}
                         </div>
 
                         <Link

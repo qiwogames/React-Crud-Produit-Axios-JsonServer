@@ -151,7 +151,7 @@ const Products = props => {
                             <label>
                                 <strong>Status:</strong>
                             </label>
-                            {currentProduct.published ? "Published" : "Pending"}
+                            {currentProduct.published ? "Publié" : "En attente"}
                         </div>
                     </form>
 

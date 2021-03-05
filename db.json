@@ -14,6 +14,21 @@
       "price_product": "452.25",
       "image_product": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/PC_Engine.jpg/250px-PC_Engine.jpg",
       "published": true
+    },
+    {
+      "name_product": "Neo Geo",
+      "description_product": "La Neo-Geo, appelée aussi NeoGeo Advanced Entertainment System, est une console de jeu vidéo sortie en 1990 à la location et en 1991 à la vente.\n\nConçue par la société japonaise SNK, elle a la particularité d'être, d'un point de vue technique, strictement identique au système d'arcade Neo-Geo MVS, avec lequel elle partage une ludothèque commune. La console est connue pour sa ludothèque de jeu d'arcade 2D de qualité, dont une grande partie sont des jeux de combat, ainsi que pour son prix très élevé et par sa très grande longévité. Au vu de son prix et de ses caractéristiques par rapport aux consoles concurrentes de la même époque, elle est considérée par certains observateurs comme la « Rolls Royce » des consoles1.",
+      "price_product": "125.25",
+      "image_product": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Neogeoaes.jpg/250px-Neogeoaes.jpg",
+      "id": 4
+    },
+    {
+      "name_product": ":o:o:o:o:",
+      "description_product": "jujuju",
+      "price_product": "125.25",
+      "image_product": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Neogeoaes.jpg/250px-Neogeoaes.jpg",
+      "id": 5,
+      "published": true
     }
   ],
   "users": [
